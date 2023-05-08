@@ -7,10 +7,10 @@ const Background = () => {
         //filter bg according to number
 
     return (
-        <div className='absolute h-screen w-screen'>
+        <div className='absolute z-[0] h-screen w-screen'>
            <Image
             src={bg}
-            alt="Picture of the author"
+            alt="info"
             fill={true}
             />
         </div>

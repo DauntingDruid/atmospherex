@@ -1,4 +1,7 @@
 import Background from "./components/background"
+import BottomPanel from "./components/bottomPanel"
+import MiddleSection from "./components/middleSection"
+import SidePanel from "./components/sidePanel"
 import weathers from "./data/weathers.json"
 
 export default function Home() {
@@ -9,7 +12,12 @@ export default function Home() {
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-between">
       <Background />
-      {/* search bar */}
+      <div className="flex z-[1] w-screen h-screen">
+        <SidePanel />
+        {/* <MiddleSection /> */}
+        {/* <BottomPanel /> */}
+      </div>
+      
 
       {/* carousel */}
         {/* cards to show weather 
