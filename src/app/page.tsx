@@ -22,8 +22,11 @@ export default function Home() {
       {/* carousel */}
         {/* cards to show weather 
           1.today
-          2. 3 days before 
-          3. 3 days ahead */}
+          2. Forecast 3 Day
+          3. Historical Weather	Last 7 days -> use 3
+          4. Air Quality(AQI)
+          5. 
+          */}
     </main>
   )
 }
