@@ -1,3 +1,5 @@
+'use client';
+import { useState } from "react";
 import Background from "./components/background"
 import BottomPanel from "./components/bottomPanel"
 import MiddleSection from "./components/middleSection"
@@ -5,15 +7,25 @@ import SidePanel from "./components/sidePanel"
 import weathers from "./data/weathers.json"
 
 export default function Home() {
-  // console.log("Weathers", weathers)
-  
-  //API call to get weather data
+  const [search, setSearch] = useState(null);
+  //api: get city info -> send to weather info API
+  const onSearchChange = (searchData: any) => {
+    console.log(searchData);
+  };
+  //api: get weather info -> send to bottom panel
+
+  //api: get air quality info -> send to side panel
+
+  //api: get historical weather info -> api: get forecast weather info 
+    //function to complie hisotrical and forecast weather info 
+      //send to middle section
+
 
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-between">
       <Background />
       <div className="flex z-[1] w-screen h-screen">
-        <SidePanel />
+        <SidePanel onSearchChange={onSearchChange} />
         {/* <MiddleSection /> */}
         {/* <BottomPanel /> */}
       </div>

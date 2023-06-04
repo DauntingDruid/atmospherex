@@ -1,10 +1,10 @@
 import React from 'react'
 import SearchBar from './searchBar'
 
-const SidePanel = () => {
+const SidePanel = (onSearchChange:any) => {
   return (
     <div className='w-1/4 bg-slate-300 backdrop-blur-lg bg-opacity-10 rounded-r-[30px] border-r-2 border-white border-opacity-20'>
-        <SearchBar />
+        <SearchBar onSearchChange={onSearchChange}/>
     </div>
   )
 }
